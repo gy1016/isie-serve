@@ -7,6 +7,7 @@ import { PostsModule } from './posts/posts.module';
 import { PostsEntity } from './posts/posts.entity';
 import { UsersModule } from './users/users.module';
 import { UsersEntity } from './users/users.entity';
+import { AuthModule } from './auth/auth.module';
 import envConfig from '../config/env';
 
 @Module({
@@ -32,6 +33,7 @@ import envConfig from '../config/env';
     }),
     UsersModule,
     PostsModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
